@@ -8,3 +8,5 @@ RUN apt-get update \
     && apt-get clean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
+ADD ./package /usr/share/texmf/
+RUN texhash
