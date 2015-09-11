@@ -1,5 +1,5 @@
 build:
-	docker build -t fgrehm/latex .
+	docker build -t fgrehm/sbc-article-latex .
 
 hack:
-	docker run -ti --rm --user="$$(id -u):$$(id -g)" -v `pwd`/sample:/workspace -w /workspace fgrehm/latex bash
+	docker run -ti --rm --user="$$(id -u):$$(id -g)" -v `pwd`/sample:/workspace -w /workspace fgrehm/sbc-article-latex bash
